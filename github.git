@@ -1,1 +1,52 @@
-git add . : Adicionar vários arquivos
+git init: Inicializa um novo repositório Git no diretório atual.
+
+git clone [URL]: Clona um repositório Git existente para o seu computador a partir de uma URL remota.
+
+git add [arquivo]: Adiciona um arquivo ao índice (staging area) para ser commitado posteriormente.
+
+git commit -m "[mensagem]": Confirma as alterações feitas e as adiciona ao repositório Git, incluindo uma mensagem descritiva.
+
+git push: Envia as alterações confirmadas para um repositório remoto no GitHub.
+
+git pull: Obtém as alterações mais recentes de um repositório remoto e as mescla com o repositório local.
+
+git branch: Lista as branches no repositório local.
+
+git checkout [branch]: Muda para uma branch específica.
+
+git merge [branch]: Mescla uma branch específica na branch atual.
+
+git status: Exibe o estado atual do repositório Git, incluindo arquivos modificados, adicionados e removidos.
+
+git log: Exibe o histórico de commits do repositório Git.
+
+git diff: Mostra as diferenças entre as alterações no diretório de trabalho e o índice (staging area).
+
+git reset [arquivo]: Remove um arquivo do índice (staging area), mas mantém as alterações no diretório de trabalho.
+
+git rm [arquivo]: Remove um arquivo do repositório Git e do sistema de arquivos.
+
+git mv [arquivo_antigo] [arquivo_novo]: Move ou renomeia um arquivo no repositório Git.
+
+git remote: Exibe os repositórios remotos configurados para o repositório local.
+
+git fetch: Busca todas as branches de um repositório remoto, mas não mescla com o repositório local.
+
+git tag: Lista, cria ou verifica tags no repositório Git.
+
+git blame [arquivo]: Exibe quem modificou cada linha de um arquivo, e o commit onde a modificação foi feita.
+
+git stash: Salva temporariamente as alterações não confirmadas para permitir a mudança de contexto sem fazer um commit.
+
+
+Mudança de Branch:
+Quando você executa git checkout [nome_da_branch], você muda para a branch especificada. Isso significa que você estará trabalhando no contexto daquela branch, podendo fazer alterações e commits dentro dela.
+
+Recuperação de Arquivos:
+Se você utilizar git checkout -- [arquivo], você descarta as alterações não confirmadas no arquivo especificado e o restaura para o estado em que estava no último commit. Isso é útil para desfazer mudanças indesejadas em arquivos específicos.
+
+Criação de Novos Branches:
+Com o comando git checkout -b [novo_nome_da_branch], você cria uma nova branch e muda para ela imediatamente. Isso combina a criação de uma nova branch com a mudança para ela em um único comando.
+
+Navegação entre Commits (Modo Detached HEAD):
+Você também pode usar git checkout [hash_do_commit] para mover o HEAD (ponteiro atual) diretamente para um commit específico. Isso coloca o repositório em um estado chamado "detached HEAD", onde você pode revisar o estado do código em um determinado ponto da história do repositório.
